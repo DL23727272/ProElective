@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>
+            Home
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="indexStyle.css">
+        <script src="jquery-3.6.1.js"></script>
+        <script>
+            var i = 0;
+            $(document).ready(function(){
+                $('.slidertitle, #slider img').hide();
+                showNextImage();
+                setInterval('showNextImage()', 3000);
+            });
+
+            function showNextImage(){
+                i++;
+                $('#sliderImage' + i ).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+                $('#title' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+                if(i==3) {i=0;}
+            }
+        </script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/helios2.png"></a>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="price.html">Price Check</a></li>
+                        <li><a href="login.html">Log out</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <div>
+                <div id="slider">
+                    <img src="img/firstBanner.jpg"  id="sliderImage1">
+                       <div class="slidertitle" id="title1"></div>
+
+                    <img src="img/secondBanner.jpg"  id="sliderImage2">
+                       <div class="slidertitle" id="title2"></div>
+
+                    <img src="img/thirdBanner.jpg"  id="sliderImage3">
+                       <div class="slidertitle" id="title3"></div>
+                    
+                </div>
+
+        </section>
+        <section>
+            <div class="info">
+                <h1><span class="input"></span></h1>
+                
+                <p>
+                    We're glad you've chosen us, and we want to show our appreciation by giving you a special 
+                    Membership discount, you will be given a 10% discount off the total transaction.
+                </p>
+        </div>
+        </section>
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".input", {
+                strings:["Helios Laundry Salon"],
+                typeSpeed: 70,
+                backSpeed: 60,
+                loop:true
+            });
+        </script>
+
+    </body>
+</html>

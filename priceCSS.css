@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #dcd4c8;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 0% 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+}
+nav img{
+    width: 100px;
+    height: 50px;
+   
+}
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+.nav_links ul li a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+img{
+    padding: 21px;
+    width: 95vw;
+    height: 40vh;
+}
+form{
+    padding: 40px;
+}
+h1{
+   
+    font-size: 30px;
+}
+select,input{
+    height: 30px;
+}
+button{
+    font-size: 25px;
+    color: red;
+    background-color: yellow;
+}
+.btn,.reset{
+    letter-spacing: 1px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 120px;
+    height: 20%;
+    font-weight: 700;
+    top: 8px;
+    padding: 20;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.btn:hover{
+    color: yellow;
+    background: red;
+}
+.reset:hover{
+    color: yellow;
+    background: red;
+}
+b{
+    padding: 0 20px 0 10px  ;
+    font-size: 20px;
+}
+label{
+
+    font-weight: 100;
+}
+.out{
+    padding: 0px 10px 0 40px;
+}

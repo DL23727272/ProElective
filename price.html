@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="with=device-width, initial-scale=1.0">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+        <title>
+            Price
+        </title>
+        <link rel="stylesheet" href="priceCSS.css">
+        <script defer src="priceJS.js"></script>
+    </head>
+    <body> 
+                <!---------------------------Gamoso Navigation Bar------------------------------------>
+        
+        <section class="header">
+            
+            <nav> 
+                
+                <a href="index.html"><img src="img/helios2.png"></a>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="price.html">Price Check</a></li>
+                        <li><a href="login.html">Log out</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div>
+
+                <!---------------------------Form for Price Check-------------------------------------->
+
+                <form action="">
+
+                    <h1>Input to Check The Price</h1>
+                    <br>
+
+                    <div>
+                        <b>Weight</b>
+                        <input type="number" id="weight" placeholder="0" required>
+                    </div>
+
+                    <br>
+                    <div>
+                        <b>Service</b>
+                        <select id="service" size="1">
+                            <option value="1000">Wash Dry</option>
+                            <option value="1200">Wash & Ironing</option>
+                            <option value="900">Ironing Only</option>
+                        </select>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <b>Type</b>
+                        <select id="type" size="1">
+                            <option value="0">Regular</option>
+                            <option value="200">Express</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <div>
+                        <b>Membership</b>
+                        <select id="privelege" size="1">
+                            <option value="0.1">Member</option>
+                            <option value="0">Non Member</option>
+                        </select>
+                    </div>
+                    
+                    <!---------------------------Submit Buttons-------------------------------------->
+                    <br>
+                         <div>
+                            <button class="btn" id="evil-button">Check</button>
+                            <button class="reset" id="evil-button" >reset</button>
+                         </div>
+                        
+                </form>
+                
+            </div>
+
+                    <!---------------------------Output-------------------------------------->
+
+                    <div  class="out">
+                        <label for="total"><b>Total Amount :</b></label>
+                        <b><span  id="total" ></span></b>
+                    </div>
+                    <div class="out">
+                        <label for="disc"><b>Total Discount :</b></label>
+                        <b><span id="disc" "></span></b>
+                    </div>
+                    <div class="out">
+                        <label for="pay"><b>Total Payment :</b></label>
+                        <b><span  id="pay"></span></b>
+                    </div>
+            
+        </section>
+        
+    </body>
+</html>
